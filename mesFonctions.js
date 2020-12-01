@@ -107,7 +107,7 @@ function initialize() {
 		L.geoJson(dataA_naturel,{
 			pointToLayer: function(feature,latlng){
 				var marker = L.marker(latlng,{icon: iconeProjet});
-				marker.bindPopup('<b>Animation patrimoine' + feature.properties.theme + '</b><br>'
+				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
 							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
 							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
 							   );
@@ -127,7 +127,7 @@ function initialize() {
 		L.geoJson(dataA_naturel,{
 			pointToLayer: function(feature,latlng){
 				var marker = L.marker(latlng,{icon: iconeProjet});
-				marker.bindPopup('<b>Animation patrimoine' + feature.properties.theme + '</b><br>'
+				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
 							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
 							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
 							   );
@@ -147,7 +147,7 @@ function initialize() {
 		L.geoJson(dataA_naturel,{
 			pointToLayer: function(feature,latlng){
 				var marker = L.marker(latlng,{icon: iconeProjet});
-				marker.bindPopup('<b>Animation patrimoine' + feature.properties.theme + '</b><br>'
+				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
 							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
 							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
 							   );
@@ -167,7 +167,7 @@ function initialize() {
 		L.geoJson(dataA_historic,{
 			pointToLayer: function(feature,latlng){
 				var marker = L.marker(latlng,{icon: iconeProjet});
-				marker.bindPopup('<b>Animation patrimoine' + feature.properties.theme + '</b><br>'
+				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
 							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
 							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
 							   );
@@ -187,7 +187,7 @@ function initialize() {
 		L.geoJson(dataA_jeu,{
 			pointToLayer: function(feature,latlng){
 				var marker = L.marker(latlng,{icon: iconeProjet});
-				marker.bindPopup('<b>Animation patrimoine' + feature.properties.theme + '</b><br>'
+				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
 							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
 							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
 							   );
@@ -207,7 +207,7 @@ function initialize() {
 		L.geoJson(dataA_nat_histo,{
 			pointToLayer: function(feature,latlng){
 				var marker = L.marker(latlng,{icon: iconeProjet});
-				marker.bindPopup('<b>Animation patrimoine' + feature.properties.theme + '</b><br>'
+				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
 							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
 							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
 							   );
@@ -227,7 +227,7 @@ function initialize() {
 		L.geoJson(dataA_culturel,{
 			pointToLayer: function(feature,latlng){
 				var marker = L.marker(latlng,{icon: iconeProjet});
-				marker.bindPopup('<b>Animation patrimoine' + feature.properties.theme + '</b><br>'
+				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
 							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
 							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
 							   );
