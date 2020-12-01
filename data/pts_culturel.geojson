@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "pts_culturel",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "1", "nom": "Long", "nb_anim": 95, "DÉNOMINATION_ACTION": "Jeudi bleu en concert", "TYPE_D'ACTION": "Animation\/Evénement", "REFERENT": "Lecuyer", "nb_real": 1, "theme": "culturel" }, "geometry": { "type": "Point", "coordinates": [ 1.977719472351265, 50.038050580048477 ] } }
+]
+}

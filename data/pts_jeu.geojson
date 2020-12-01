@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "pts_jeu",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "1", "nom": "Long", "nb_anim": 95, "DÉNOMINATION_ACTION": "Une Somme de jeux à la MéL", "TYPE_D'ACTION": "Animation\/Evénement", "REFERENT": "Lecuyer", "nb_real": 4, "theme": "jeu" }, "geometry": { "type": "Point", "coordinates": [ 1.977613627834623, 50.03824659511578 ] } },
+{ "type": "Feature", "properties": { "id": "2", "nom": "Long", "nb_anim": 95, "DÉNOMINATION_ACTION": "Parcours d'énigmes : à vos vélos !", "TYPE_D'ACTION": "Animation\/Evénement", "REFERENT": "Albert-Brunet", "nb_real": 2, "theme": "jeu" }, "geometry": { "type": "Point", "coordinates": [ 1.977757296382321, 50.038341553991863 ] } },
+{ "type": "Feature", "properties": { "id": "3", "nom": "Long", "nb_anim": 95, "DÉNOMINATION_ACTION": "Parcours d'énigmes", "TYPE_D'ACTION": "Animation\/Evénement", "REFERENT": "Albert-Brunet", "nb_real": 4, "theme": "jeu" }, "geometry": { "type": "Point", "coordinates": [ 1.9791795785288, 50.038559679013638 ] } },
+{ "type": "Feature", "properties": { "id": "4", "nom": "Long", "nb_anim": 95, "DÉNOMINATION_ACTION": "Hal-Long-ween", "TYPE_D'ACTION": "Animation\/Evénement", "REFERENT": "Albert-Brunet", "nb_real": 1, "theme": "jeu" }, "geometry": { "type": "Point", "coordinates": [ 1.979852060077487, 50.038902815395424 ] } },
+{ "type": "Feature", "properties": { "id": "5", "nom": "Long", "nb_anim": 95, "DÉNOMINATION_ACTION": "A la conquête du trésor de Long", "TYPE_D'ACTION": "Animation\/Evénement", "REFERENT": "Albert-Brunet", "nb_real": 1, "theme": "jeu" }, "geometry": { "type": "Point", "coordinates": [ 1.979434614590696, 50.038908717079387 ] } }
+]
+}

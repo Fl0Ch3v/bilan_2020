@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "pts_naturel_historique",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "1", "nom": "Érondelle", "nb_anim": 3, "DÉNOMINATION_ACTION": "L'oppidum à travers le temps", "TYPE_D'ACTION": "Sortie", "REFERENT": "Albert-Brunet", "nb_real": 3, "theme": "naturel et historique" }, "geometry": { "type": "Point", "coordinates": [ 1.878135572818004, 50.046241896503858 ] } },
+{ "type": "Feature", "properties": { "id": "2", "nom": "Long", "nb_anim": 95, "DÉNOMINATION_ACTION": "Extraction de tourbe", "TYPE_D'ACTION": "Sortie", "REFERENT": "Albert-Brunet", "nb_real": 2, "theme": "naturel et historique" }, "geometry": { "type": "Point", "coordinates": [ 1.972637302302403, 50.031401047975301 ] } },
+{ "type": "Feature", "properties": { "id": "3", "nom": "Long", "nb_anim": 95, "DÉNOMINATION_ACTION": "Balade au Long cours", "TYPE_D'ACTION": "Sortie", "REFERENT": "Lecuyer", "nb_real": 20, "theme": "naturel et historique" }, "geometry": { "type": "Point", "coordinates": [ 1.978230070584348, 50.038479885724001 ] } }
+]
+}

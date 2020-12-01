@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "pts_historique",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "1", "nom": "Fressenneville", "nb_anim": 4, "DÉNOMINATION_ACTION": "Un pôle industriel du Vimeu", "TYPE_D'ACTION": "Sortie", "REFERENT": "Lecuyer", "nb_real": 4, "theme": "historique" }, "geometry": { "type": "Point", "coordinates": [ 1.566602117075813, 50.061099319995272 ] } },
+{ "type": "Feature", "properties": { "id": "2", "nom": "Quend", "nb_anim": 1, "DÉNOMINATION_ACTION": "Apéro du patrimoine", "TYPE_D'ACTION": "Animation\/Evénement", "REFERENT": "Lecuyer", "nb_real": 1, "theme": "historique" }, "geometry": { "type": "Point", "coordinates": [ 1.610569453403131, 50.321929886584705 ] } },
+{ "type": "Feature", "properties": { "id": "3", "nom": "Longpré-les-Corps-Saints", "nb_anim": 11, "DÉNOMINATION_ACTION": "Collégiale Notre-Dame de l'Assomption", "TYPE_D'ACTION": "Animation\/Evénement", "REFERENT": "Lecuyer", "nb_real": 3, "theme": "historique" }, "geometry": { "type": "Point", "coordinates": [ 1.98313288550323, 50.01261597068472 ] } },
+{ "type": "Feature", "properties": { "id": "4", "nom": "Pont-Remy", "nb_anim": 4, "DÉNOMINATION_ACTION": "D'une rive à l'autre de la Somme", "TYPE_D'ACTION": "Sortie", "REFERENT": "Lecuyer", "nb_real": 3, "theme": "historique" }, "geometry": { "type": "Point", "coordinates": [ 1.914406168151047, 50.062250922830337 ] } },
+{ "type": "Feature", "properties": { "id": "5", "nom": "Long", "nb_anim": 95, "DÉNOMINATION_ACTION": "Le Long village", "TYPE_D'ACTION": "Sortie", "REFERENT": "Lecuyer", "nb_real": 3, "theme": "historique" }, "geometry": { "type": "Point", "coordinates": [ 1.977817653238863, 50.038235795009093 ] } },
+{ "type": "Feature", "properties": { "id": "6", "nom": "Long", "nb_anim": 95, "DÉNOMINATION_ACTION": "La fabuleuse histoire des saints picards par Jean-Marie François", "TYPE_D'ACTION": "Animation\/Evénement", "REFERENT": "Lecuyer", "nb_real": 1, "theme": "historique" }, "geometry": { "type": "Point", "coordinates": [ 1.977613376542709, 50.038259094462177 ] } },
+{ "type": "Feature", "properties": { "id": "7", "nom": "Long", "nb_anim": 95, "DÉNOMINATION_ACTION": "Eglise Saint-Jean-Baptiste", "TYPE_D'ACTION": "Animation\/Evénement", "REFERENT": "Lecuyer", "nb_real": 7, "theme": "historique" }, "geometry": { "type": "Point", "coordinates": [ 1.981686562490581, 50.039861923877524 ] } },
+{ "type": "Feature", "properties": { "id": "8", "nom": "Long", "nb_anim": 95, "DÉNOMINATION_ACTION": "A la rencontre de la fée électricité", "TYPE_D'ACTION": "Animation\/Evénement", "REFERENT": "Albert-Brunet", "nb_real": 38, "theme": "historique" }, "geometry": { "type": "Point", "coordinates": [ 1.983252516102335, 50.035324396328832 ] } },
+{ "type": "Feature", "properties": { "id": "9", "nom": "Le Crotoy", "nb_anim": 2, "DÉNOMINATION_ACTION": "Les jeudis Manessier", "TYPE_D'ACTION": "Sortie", "REFERENT": "Lecuyer", "nb_real": 5, "theme": "historique" }, "geometry": { "type": "Point", "coordinates": [ 1.623812035933589, 50.244048231262418 ] } }
+]
+}
