@@ -22,20 +22,20 @@ function initialize() {
 
 		
 		// création d'une couche geoJson qui appelle le fichier "pnr_perim.geojson"			
-		var pnr = $.getJSON("/data/pnr_perim.geojson",function(dataPnr)
-					{L.geoJson( dataPnr, 
-						{style: function(feature)
-							{	
+//		var pnr = $.getJSON("/data/pnr_perim.geojson",function(dataPnr)
+//					{L.geoJson( dataPnr, 
+//						{style: function(feature)
+//							{	
 							// paramétrage de la symbologie de la couche "pnr"
-							return { color: "#00997a", weight: 3, fillColor: '#00997a', fillOpacity: 0 };
-							},
+	//						return { color: "#00997a", weight: 3, fillColor: '#00997a', fillOpacity: 0 };
+//							},
 	//	onEachFeature: function( feature, layer )
 	//			{
 				// paramétrage de la popup de la couche "pnr"	
 	//			layer.bindPopup( "<b><u>Parc Naturel Régional</u></b><br><b><u>Baie de Somme - Picaride maritime</u></b><br>" + feature.properties.nb_com + " communes adhérentes<br>" + feature.properties.area_ha + " hectares" )
 	//			}
-		}).addTo(map);
-		});
+//		}).addTo(map);
+//		});
 	
 
 		// création d'une couche geoJson qui appelle le fichier "pah_perim.geojson"			
