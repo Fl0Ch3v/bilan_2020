@@ -97,7 +97,7 @@ function initialize() {
 
 						
 		// création d'une couche geoJson qui appelle le fichier "projet_pat.geojson"													
-		var a_nature = $.getJSON("/data/pts_naturel.geojson",function(dataA_naturel)
+		var a_nature = $.getJSON("data/pts_naturel.geojson",function(dataA_naturel)
 										// icone Clap	
 										{var iconeProjet = L.icon({
 													iconUrl: 'style/nature.png',
@@ -117,7 +117,7 @@ function initialize() {
 										});				
 													
 				// création d'une couche geoJson qui appelle le fichier "projet_pat.geojson"													
-		var a_nature = $.getJSON("/data/pts_naturel.geojson",function(dataA_naturel)
+		var a_nature = $.getJSON("data/pts_naturel.geojson",function(dataA_naturel)
 										// icone Clap	
 										{var iconeProjet = L.icon({
 													iconUrl: 'style/nature.png',
@@ -137,7 +137,7 @@ function initialize() {
 										});	
 
 												// création d'une couche geoJson qui appelle le fichier "pts_naturel.geojson"													
-		var a_nature = $.getJSON("/data/pts_naturel.geojson",function(dataA_naturel)
+		var a_nature = $.getJSON("data/pts_naturel.geojson",function(dataA_naturel)
 										// icone Clap	
 										{var iconeProjet = L.icon({
 													iconUrl: 'style/nature.png',
@@ -157,7 +157,7 @@ function initialize() {
 										});	
 
 		// création d'une couche geoJson qui appelle le fichier "pts_historique.geojson"													
-		var a_historic = $.getJSON("/data/pts_historique.geojson",function(dataA_historic)
+		var a_historic = $.getJSON("data/pts_historique.geojson",function(dataA_historic)
 										// icone Clap	
 										{var iconeProjet = L.icon({
 													iconUrl: 'style/historique.png',
@@ -177,7 +177,7 @@ function initialize() {
 										});											
 
 		// création d'une couche geoJson qui appelle le fichier "pts_jeu.geojson"													
-		var a_jeu = $.getJSON("/data/pts_jeu.geojson",function(dataA_jeu)
+		var a_jeu = $.getJSON("data/pts_jeu.geojson",function(dataA_jeu)
 										// icone Clap	
 										{var iconeProjet = L.icon({
 													iconUrl: 'style/jeu.png',
@@ -197,7 +197,7 @@ function initialize() {
 										});	
 
 		// création d'une couche geoJson qui appelle le fichier "pts_naturel_historique.geojson"													
-		var a_nat_histo = $.getJSON("/data/pts_naturel_historique.geojson",function(dataA_nat_histo)
+		var a_nat_histo = $.getJSON("data/pts_naturel_historique.geojson",function(dataA_nat_histo)
 										// icone Clap	
 										{var iconeProjet = L.icon({
 													iconUrl: 'style/histo_nature.png',
@@ -217,7 +217,7 @@ function initialize() {
 										});	
 
 		// création d'une couche geoJson qui appelle le fichier "pts_culturel.geojson"													
-		var a_culturel = $.getJSON("/data/pts_culturel.geojson",function(dataA_culturel)
+		var a_culturel = $.getJSON("data/pts_culturel.geojson",function(dataA_culturel)
 										// icone Clap	
 										{var iconeProjet = L.icon({
 													iconUrl: 'style/culture.png',
