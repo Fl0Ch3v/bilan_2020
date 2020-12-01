@@ -22,7 +22,7 @@ function initialize() {
 
 		
 		// création d'une couche geoJson qui appelle le fichier "pnr_perim.geojson"			
-//		var pnr = $.getJSON("/data/pnr_perim.geojson",function(dataPnr)
+//		var pnr = $.getJSON("data/pnr_perim.geojson",function(dataPnr)
 //					{L.geoJson( dataPnr, 
 //						{style: function(feature)
 //							{	
@@ -39,7 +39,7 @@ function initialize() {
 	
 
 		// création d'une couche geoJson qui appelle le fichier "pah_perim.geojson"			
-		//var pah = $.getJSON("/data/pah_perim.geojson",function(dataPah)
+		//var pah = $.getJSON("data/pah_perim.geojson",function(dataPah)
 		//			{L.geoJson( dataPah, 
 		//				{style: function(feature)
 		//					{	
@@ -100,8 +100,8 @@ function initialize() {
 		var a_nature = $.getJSON("data/pts_naturel.geojson",function(dataA_naturel)
 										// icone Clap	
 										{var iconeProjet = L.icon({
-													iconUrl: 'style/nature.png',
-													iconSize: [50, 32]
+													iconUrl: 'style/V2/nature.png',
+													iconSize: [32, 32]
 																	});
 		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
 		L.geoJson(dataA_naturel,{
@@ -120,8 +120,8 @@ function initialize() {
 		var a_nature = $.getJSON("data/pts_naturel.geojson",function(dataA_naturel)
 										// icone Clap	
 										{var iconeProjet = L.icon({
-													iconUrl: 'style/nature.png',
-													iconSize: [50, 32]
+													iconUrl: 'style/V2/nature.png',
+													iconSize: [32, 32]
 																	});
 		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
 		L.geoJson(dataA_naturel,{
@@ -140,8 +140,8 @@ function initialize() {
 		var a_nature = $.getJSON("data/pts_naturel.geojson",function(dataA_naturel)
 										// icone Clap	
 										{var iconeProjet = L.icon({
-													iconUrl: 'style/nature.png',
-													iconSize: [50, 32]
+													iconUrl: 'style/V2/nature.png',
+													iconSize: [32, 32]
 																	});
 		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
 		L.geoJson(dataA_naturel,{
@@ -160,7 +160,7 @@ function initialize() {
 		var a_historic = $.getJSON("data/pts_historique.geojson",function(dataA_historic)
 										// icone Clap	
 										{var iconeProjet = L.icon({
-													iconUrl: 'style/historique.png',
+													iconUrl: 'style/V2/historique.png',
 													iconSize: [32, 32]
 																	});
 		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
@@ -180,7 +180,7 @@ function initialize() {
 		var a_jeu = $.getJSON("data/pts_jeu.geojson",function(dataA_jeu)
 										// icone Clap	
 										{var iconeProjet = L.icon({
-													iconUrl: 'style/jeu.png',
+													iconUrl: 'style/V2/jeu.png',
 													iconSize: [32, 32]
 																	});
 		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
@@ -200,8 +200,8 @@ function initialize() {
 		var a_nat_histo = $.getJSON("data/pts_naturel_historique.geojson",function(dataA_nat_histo)
 										// icone Clap	
 										{var iconeProjet = L.icon({
-													iconUrl: 'style/histo_nature.png',
-													iconSize: [32, 38]
+													iconUrl: 'style/V2/histo_nature.png',
+													iconSize: [32, 32]
 																	});
 		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
 		L.geoJson(dataA_nat_histo,{
@@ -220,7 +220,7 @@ function initialize() {
 		var a_culturel = $.getJSON("data/pts_culturel.geojson",function(dataA_culturel)
 										// icone Clap	
 										{var iconeProjet = L.icon({
-													iconUrl: 'style/culture.png',
+													iconUrl: 'style/V2/culture.png',
 													iconSize: [32, 32]
 																	});
 		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
