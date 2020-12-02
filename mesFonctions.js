@@ -211,16 +211,6 @@ function initialize() {
 										});	
 
 
-		// affichage de couche selon le zoom
-		map.on('zoomend', function() {
-			if (map.getZoom() == 13) { 
-				c_anim.setOpacity(1);
-			} else { 
-				c_anim.setOpacity(0)
-			}
-		});
-
-
 
 
 
