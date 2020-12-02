@@ -55,8 +55,8 @@ function initialize() {
 	//	});
 
 		// création d'une couche geoJson qui appelle le fichier "com_pnr2.geojson"			
-		var c_anim = $.getJSON("data/com_pnr2.geojson",function(dataC_anim)
-					{L.geoJson( dataC_anim, 
+		var com = $.getJSON("data/com_pnr2.geojson",function(dataCom)
+					{L.geoJson( dataCom, 
 						{style: function(feature)
 							{	
 							// paramétrage de la symbologie de la couche "c_anim"
@@ -89,38 +89,19 @@ function initialize() {
 		}).addTo(map);
 		});
 
-						
-		// création d'une couche geoJson qui appelle le fichier "pts_naturel.geojson"													
-		var a_nature = $.getJSON("data/pts_naturel.geojson",function(dataA_naturel)
-										// icone Clap	
-										{var iconeProjet = L.icon({
-													iconUrl: 'style/V2/nature.png',
-													iconSize: [32, 32]
-																	});
-		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
-		L.geoJson(dataA_naturel,{
-			pointToLayer: function(feature,latlng){
-				var marker = L.marker(latlng,{icon: iconeProjet});
-				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
-							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
-							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
-							   );
-				return marker;
-				}
-						})//.addTo(map);
-										});				
+									
 
 			// création d'une couche geoJson qui appelle le fichier "pts_naturel.geojson"													
 		var a_nature = $.getJSON("data/pts_naturel.geojson",function(dataA_naturel)
 										// icone Clap	
-										{var iconeProjet = L.icon({
+										{var iconeNature = L.icon({
 													iconUrl: 'style/V2/nature.png',
 													iconSize: [32, 32]
 																	});
 		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
 		L.geoJson(dataA_naturel,{
 			pointToLayer: function(feature,latlng){
-				var marker = L.marker(latlng,{icon: iconeProjet});
+				var marker = L.marker(latlng,{icon: iconeNature});
 				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
 							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
 							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
@@ -133,14 +114,14 @@ function initialize() {
 		// création d'une couche geoJson qui appelle le fichier "pts_historique.geojson"													
 		var a_historic = $.getJSON("data/pts_historique.geojson",function(dataA_historic)
 										// icone Clap	
-										{var iconeProjet = L.icon({
+										{var iconeHisto = L.icon({
 													iconUrl: 'style/V2/historique.png',
 													iconSize: [32, 32]
 																	});
 		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
 		L.geoJson(dataA_historic,{
 			pointToLayer: function(feature,latlng){
-				var marker = L.marker(latlng,{icon: iconeProjet});
+				var marker = L.marker(latlng,{icon: iconeHisto});
 				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
 							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
 							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
@@ -153,14 +134,14 @@ function initialize() {
 		// création d'une couche geoJson qui appelle le fichier "pts_jeu.geojson"													
 		var a_jeu = $.getJSON("data/pts_jeu.geojson",function(dataA_jeu)
 										// icone Clap	
-										{var iconeProjet = L.icon({
+										{var iconeJeu = L.icon({
 													iconUrl: 'style/V2/jeu.png',
 													iconSize: [32, 32]
 																	});
 		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
 		L.geoJson(dataA_jeu,{
 			pointToLayer: function(feature,latlng){
-				var marker = L.marker(latlng,{icon: iconeProjet});
+				var marker = L.marker(latlng,{icon: iconeJeu});
 				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
 							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
 							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
@@ -173,14 +154,14 @@ function initialize() {
 		// création d'une couche geoJson qui appelle le fichier "pts_naturel_historique.geojson"													
 		var a_nat_histo = $.getJSON("data/pts_naturel_historique.geojson",function(dataA_nat_histo)
 										// icone Clap	
-										{var iconeProjet = L.icon({
+										{var iconeNatHisto = L.icon({
 													iconUrl: 'style/V2/histo_nature.png',
 													iconSize: [32, 32]
 																	});
 		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
 		L.geoJson(dataA_nat_histo,{
 			pointToLayer: function(feature,latlng){
-				var marker = L.marker(latlng,{icon: iconeProjet});
+				var marker = L.marker(latlng,{icon: iconeNatHisto});
 				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
 							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
 							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
@@ -193,14 +174,14 @@ function initialize() {
 		// création d'une couche geoJson qui appelle le fichier "pts_culturel.geojson"													
 		var a_culturel = $.getJSON("data/pts_culturel.geojson",function(dataA_culturel)
 										// icone Clap	
-										{var iconeProjet = L.icon({
+										{var iconeCulture = L.icon({
 													iconUrl: 'style/V2/culture.png',
 													iconSize: [32, 32]
 																	});
 		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
 		L.geoJson(dataA_culturel,{
 			pointToLayer: function(feature,latlng){
-				var marker = L.marker(latlng,{icon: iconeProjet});
+				var marker = L.marker(latlng,{icon: iconeCulture});
 				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
 							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
 							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
@@ -210,7 +191,7 @@ function initialize() {
 						});
 										});	
 
-
+		var 								
 		//var a_markers = L.layerGroup([a_culturel, a_nat_histo, a_jeu, a_historic, a_nature ]);
 		
 		var clusters = L.markerClusterGroup();
