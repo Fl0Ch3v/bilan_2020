@@ -54,49 +54,43 @@ function initialize() {
 	//	}).addTo(map);
 	//	});
 
-		// création du style des circuits
-		function getColor(d) {
-			return d == '1' ? '#8A2BE2' :
-				   d == '2' ? '#e0be25' :
-				   d == '3' ? '#006400' :
-				   d == '4' ? '#9932CC' :
-				   d == '5' ? '#FF8C00' :
-				   		      '#e0be25' ;
-		};
-
-		function style(feature) 
-							{
-							return {
-								weight : 2,
-								opacity: 1,
-								color: getColor(feature.properties.id)
-							};
-						}
-
-		// création d'une couche geoJson qui appelle le fichier "circuits_long_v1.geojson"			
-		var circuit = $.getJSON("circuits_long_v1.geojson",function(dataCircuit)
-					{L.geoJson( dataCircuit, 
-						{style: function(feature) 
-							{
-							return {
-								weight : 5,
-								opacity: 1,
-								color: getColor(feature.properties.id)
-							};
-						},
+		// création d'une couche geoJson qui appelle le fichier "com_pnr2.geojson"			
+		var c_anim = $.getJSON("data/com_pnr2.geojson",function(dataC_anim)
+					{L.geoJson( dataC_anim, 
+						{style: function(feature)
+							{	
+							// paramétrage de la symbologie de la couche "c_anim"
+							return { color: "#000000", weight: 1, fillColor: '#00997a', fillOpacity: 0 };
+							},
 		onEachFeature: function( feature, layer )
 				{
-				// paramétrage de la popup de la couche "com"	
-				layer.bindPopup( '<b>'+ feature.properties.nom + '</b><br>'
-								+ "Distance : " + feature.properties.distance + '<br>'
-								+ feature.properties.duree_pied + " à pied" + '<br>'
-								+ feature.properties.duree_velo + " à vélo")
+				// paramétrage de la popup de la couche "c_anim"	
+				layer.bindPopup( feature.properties.nom )
+				}
+		}).addTo(map);
+		});
+	
+		
+						
+		// création d'une couche geoJson qui appelle le fichier "com_anim.geojson"			
+		var c_anim = $.getJSON("data/com_anim.geojson",function(dataC_anim)
+					{L.geoJson( dataC_anim, 
+						{style: function(feature)
+							{	
+							// paramétrage de la symbologie de la couche "c_anim"
+							return { color: "#8B008B", weight: 1, fillColor: '#8B008B', fillOpacity: 0.3 };
+							},
+		onEachFeature: function( feature, layer )
+				{
+				// paramétrage de la popup de la couche "c_anim"	
+				layer.bindPopup( '<b>' feature.properties.nom + '</b><br>'+
+				'<b>' +	feature.properties.nb_anim + " animation(s) réalisée(s)</b>")
 				}
 		}).addTo(map);
 		});
 
 						
-		// création d'une couche geoJson qui appelle le fichier "projet_pat.geojson"													
+		// création d'une couche geoJson qui appelle le fichier "pts_naturel.geojson"													
 		var a_nature = $.getJSON("data/pts_naturel.geojson",function(dataA_naturel)
 										// icone Clap	
 										{var iconeProjet = L.icon({
@@ -115,28 +109,8 @@ function initialize() {
 				}
 						}).addTo(map);
 										});				
-													
-				// création d'une couche geoJson qui appelle le fichier "projet_pat.geojson"													
-		var a_nature = $.getJSON("data/pts_naturel.geojson",function(dataA_naturel)
-										// icone Clap	
-										{var iconeProjet = L.icon({
-													iconUrl: 'style/V2/nature.png',
-													iconSize: [32, 32]
-																	});
-		// fonction pointToLayer qui ajoute la couche "projets" à la carte, selon la symbologie "iconeProjet", et paramètre la popup
-		L.geoJson(dataA_naturel,{
-			pointToLayer: function(feature,latlng){
-				var marker = L.marker(latlng,{icon: iconeProjet});
-				marker.bindPopup('<b>Animation patrimoine ' + feature.properties.theme + '</b><br>'
-							   + "<b>Commune : </b>" + feature.properties.nom+ '<br>' 
-							   + "<b>Nombre de répétition : </b>" + feature.properties.nb_real
-							   );
-				return marker;
-				}
-						}).addTo(map);
-										});	
 
-												// création d'une couche geoJson qui appelle le fichier "pts_naturel.geojson"													
+			// création d'une couche geoJson qui appelle le fichier "pts_naturel.geojson"													
 		var a_nature = $.getJSON("data/pts_naturel.geojson",function(dataA_naturel)
 										// icone Clap	
 										{var iconeProjet = L.icon({
