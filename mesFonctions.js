@@ -214,7 +214,7 @@ function initialize() {
 		//var a_markers = L.layerGroup([a_culturel, a_nat_histo, a_jeu, a_historic, a_nature ]);
 		
 		var clusters = L.markerClusterGroup();
-		clusters.addLayer(a_culturel);
+		clusters.addLayer(dataA_culturel);
 		map.addLayer(clusters);
 
 		// création d'un contrôle des couches pour modifier les couches de fond de plan	
