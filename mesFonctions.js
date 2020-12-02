@@ -191,7 +191,7 @@ function initialize() {
 						});
 										});	
 
-		$.getJSON("data_point.geojson",function(data_point){
+		$.getJSON("pts.geojson",function(data_point){
 			var styleIcon = L.icon({
 			iconUrl: 'icon.png',
 			iconSize: [15,20]
