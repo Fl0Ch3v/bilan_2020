@@ -18,42 +18,6 @@ function initialize() {
         });
 		    
 
-		
-
-		
-		// création d'une couche geoJson qui appelle le fichier "pnr_perim.geojson"			
-//		var pnr = $.getJSON("data/pnr_perim.geojson",function(dataPnr)
-//					{L.geoJson( dataPnr, 
-//						{style: function(feature)
-//							{	
-							// paramétrage de la symbologie de la couche "pnr"
-	//						return { color: "#00997a", weight: 3, fillColor: '#00997a', fillOpacity: 0 };
-//							},
-	//	onEachFeature: function( feature, layer )
-	//			{
-				// paramétrage de la popup de la couche "pnr"	
-	//			layer.bindPopup( "<b><u>Parc Naturel Régional</u></b><br><b><u>Baie de Somme - Picaride maritime</u></b><br>" + feature.properties.nb_com + " communes adhérentes<br>" + feature.properties.area_ha + " hectares" )
-	//			}
-//		}).addTo(map);
-//		});
-	
-
-		// création d'une couche geoJson qui appelle le fichier "pah_perim.geojson"			
-		//var pah = $.getJSON("data/pah_perim.geojson",function(dataPah)
-		//			{L.geoJson( dataPah, 
-		//				{style: function(feature)
-		//					{	
-							// paramétrage de la symbologie de la couche "pah"
-		//					return { color: "#319098", weight: 0, fillColor: '#319098', fillOpacity: .3 };
-		//					},
-		//onEachFeature: function( feature, layer )
-		//		{
-				// paramétrage de la popup de la couche "pah"	
-		//		layer.bindPopup( "<b>Pays d'Art et d'Histoire</b><br><b>Ponthieu - Baie de Somme</b>")
-		//		}
-	//	}).addTo(map);
-	//	});
-
 		// création d'une couche geoJson qui appelle le fichier "com_pnr2.geojson"			
 		var com = $.getJSON("data/com_pnr2.geojson",function(dataCom)
 					{L.geoJson( dataCom, 
@@ -193,8 +157,8 @@ function initialize() {
 
 		$.getJSON("data/pts.geojson",function(data_point){
 			var styleIcon = L.icon({
-			iconUrl: 'icon.png',
-			iconSize: [15,20]
+			iconUrl: 'style/V2/culture.png',
+			iconSize: [32, 32]
 		});
 			var data_point = L.geoJson(data_point,{
 				pointToLayer: function(feature,latlng){
