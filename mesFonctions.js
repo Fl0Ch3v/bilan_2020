@@ -83,7 +83,7 @@ function initialize() {
 		onEachFeature: function( feature, layer )
 				{
 				// paramétrage de la popup de la couche "c_anim"	
-				layer.bindPopup( '<b>' feature.properties.nom + '</b><br>'+
+				layer.bindPopup( '<b>' + feature.properties.nom + '</b><br>'+
 				'<b>' +	feature.properties.nb_anim + " animation(s) réalisée(s)</b>")
 				}
 		}).addTo(map);
