@@ -191,12 +191,25 @@ function initialize() {
 						});
 										});	
 
-										
+		$.getJSON("data_point.geojson",function(data_point){
+			var styleIcon = L.icon({
+			iconUrl: 'icon.png',
+			iconSize: [15,20]
+		});
+			var data_point = L.geoJson(data_point,{
+				pointToLayer: function(feature,latlng){
+					var marker = L.marker(latlng,{icon: styleIcon});
+					marker.bindPopup('Site name : ');
+				return marker;
+			}
+		});
+	});
+		var clusters = L.markerClusterGroup();
+		clusters.addLayer(data_point);
+		map.addLayer(clusters);					
 		//var a_markers = L.layerGroup([a_culturel, a_nat_histo, a_jeu, a_historic, a_nature ]);
 		
-		var clusters = L.markerClusterGroup();
-		clusters.addLayer(dataA_culturel);
-		map.addLayer(clusters);
+
 
 		// création d'un contrôle des couches pour modifier les couches de fond de plan	
 		var baseLayers = {
