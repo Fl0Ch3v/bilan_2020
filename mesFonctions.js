@@ -148,7 +148,7 @@ function initialize() {
 							   );
 				return marker;
 				}
-						})//.addTo(map);
+						}).addTo(map);
 										});	
 
 		// création d'une couche geoJson qui appelle le fichier "pts_naturel_historique.geojson"													
