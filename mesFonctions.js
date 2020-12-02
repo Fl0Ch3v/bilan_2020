@@ -191,7 +191,7 @@ function initialize() {
 						});
 										});	
 
-		var 								
+										
 		//var a_markers = L.layerGroup([a_culturel, a_nat_histo, a_jeu, a_historic, a_nature ]);
 		
 		var clusters = L.markerClusterGroup();
