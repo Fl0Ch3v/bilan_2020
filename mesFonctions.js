@@ -1,6 +1,6 @@
 function initialize() {
 		// création de la carte et paramétrage général : centre et niveau de zoom
-        var map = L.map('mapid').setView([50.172669, 1.802510], 10);
+        var map = L.map('mapid').setView([50.172669, 1.802510], 13);
  
 		// création d'une couche "osmLayer"
         var osmLayer = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
@@ -209,6 +209,20 @@ function initialize() {
 				}
 						}).addTo(map);
 										});	
+
+
+		// affichage de couche selon le zoom
+		map.on('zoomend', function() {
+			if (map.getZoom() == 13) { 
+				map.removeLayer(a_nat_histo);
+			} else { 
+				map.addLayer(a_nat_histo)
+			}
+		});
+
+
+
+
 
 		// création d'un contrôle des couches pour modifier les couches de fond de plan	
 		var baseLayers = {
