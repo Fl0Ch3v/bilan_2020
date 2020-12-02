@@ -107,7 +107,7 @@ function initialize() {
 							   );
 				return marker;
 				}
-						}).addTo(map);
+						})//.addTo(map);
 										});				
 
 			// création d'une couche geoJson qui appelle le fichier "pts_naturel.geojson"													
@@ -127,7 +127,7 @@ function initialize() {
 							   );
 				return marker;
 				}
-						}).addTo(map);
+						})//.addTo(map);
 										});	
 
 		// création d'une couche geoJson qui appelle le fichier "pts_historique.geojson"													
@@ -147,7 +147,7 @@ function initialize() {
 							   );
 				return marker;
 				}
-						}).addTo(map);
+						})//.addTo(map);
 										});											
 
 		// création d'une couche geoJson qui appelle le fichier "pts_jeu.geojson"													
@@ -167,7 +167,7 @@ function initialize() {
 							   );
 				return marker;
 				}
-						}).addTo(map);
+						})//.addTo(map);
 										});	
 
 		// création d'une couche geoJson qui appelle le fichier "pts_naturel_historique.geojson"													
@@ -187,7 +187,7 @@ function initialize() {
 							   );
 				return marker;
 				}
-						}).addTo(map);
+						})//.addTo(map);
 										});	
 
 		// création d'une couche geoJson qui appelle le fichier "pts_culturel.geojson"													
@@ -207,12 +207,15 @@ function initialize() {
 							   );
 				return marker;
 				}
-						}).addTo(map);
+						})//.addTo(map);
 										});	
 
 
-
-
+		var a_markers = L.layerGroup([a_culturel, a_nat_histo, a_jeu, a_historic, a_nature ]);
+		
+		var clusters = L.markerClusterGroup();
+		clusters.addLayer(a_markers);
+		map.addLayer(clusters);
 
 		// création d'un contrôle des couches pour modifier les couches de fond de plan	
 		var baseLayers = {
@@ -222,4 +225,4 @@ function initialize() {
 
 		L.control.layers(baseLayers).addTo(map);
 
-}
+};
