@@ -29,13 +29,13 @@ function initialize() {
 							   );
 				return marker;
 				}
-						})//.addTo(map);
+						}).addTo(map);
 										});	
 
-	var m = L.marker( [marker])
-	markerClusters.addLayer(m);
+//	var m = L.marker( [marker])
+//	markerClusters.addLayer(m);
 
-	map.addLayer(markerClusters);
+//	map.addLayer(markerClusters);
 
 
 
